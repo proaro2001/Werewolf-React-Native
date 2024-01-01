@@ -2,7 +2,7 @@ import React from "react";
 import { ImageBackground, StyleSheet, View, Button, Text } from "react-native";
 import StartBtn from "./StartBtn";
 
-function Welcome({}) {
+function Welcome() {
   return (
     <View style={styles.imgContainer}>
       <ImageBackground

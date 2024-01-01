@@ -1,7 +1,12 @@
+/**
+ * Future implementation:
+ * image for the button instead of text
+ */
+
 import React from "react";
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
 
-function startBtn({ text, onPress }) {
+function ReturnBtn({ text, onPress }) {
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={styles.button}>
@@ -11,15 +16,29 @@ function startBtn({ text, onPress }) {
   );
 }
 
-export default startBtn;
+export default ReturnBtn;
 
 const styles = StyleSheet.create({
   button: {
-    // width: "80%",
+    backgroundColor: "#FFD700",
     borderRadius: 20,
     paddingVertical: 14,
     paddingHorizontal: 10,
-    backgroundColor: "#FFD700",
+    width: 50,
+    height: 50,
+    justifyContent: "center",
+    alignItems: "center",
+    marginLeft: "2%",
+
+    // // shadow for the button
+    // shadowColor: "black",
+    // shadowOffset: {
+    //   width: 0,
+    //   height: 10,
+    // },
+    // shadowOpacity: 0.25,
+    // shadowRadius: 3.5,
+    // elevation: 5,
   },
   buttonTxt: {
     color: "black",
