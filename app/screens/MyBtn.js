@@ -6,39 +6,27 @@
 import React from "react";
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
 
-function ReturnBtn({ text, onPress }) {
+function MyBtn({ text, onPress, buttonStyle, textStyle }) {
   return (
     <TouchableOpacity onPress={onPress}>
-      <View style={styles.button}>
-        <Text style={styles.buttonTxt}>{text}</Text>
+      <View style={[styles.button, buttonStyle]}>
+        <Text style={[styles.buttonTxt, textStyle]}>{text}</Text>
       </View>
     </TouchableOpacity>
   );
 }
 
-export default ReturnBtn;
+export default MyBtn;
 
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "#FFD700",
     borderRadius: 20,
-    paddingVertical: 14,
-    paddingHorizontal: 10,
     width: 50,
     height: 50,
     justifyContent: "center",
     alignItems: "center",
-    marginLeft: "2%",
-
-    // // shadow for the button
-    // shadowColor: "black",
-    // shadowOffset: {
-    //   width: 0,
-    //   height: 10,
-    // },
-    // shadowOpacity: 0.25,
-    // shadowRadius: 3.5,
-    // elevation: 5,
+    // marginLeft: "2%",
   },
   buttonTxt: {
     color: "black",

@@ -8,8 +8,7 @@ import {
   SafeAreaView,
 } from "react-native";
 import StartBtn from "./StartBtn";
-// import ReturnBtn from "./returnBtn";
-import ReturnBtn from "./ReturnBtn";
+import Header from "./Header";
 
 function CharacterSelectionPage(props) {
   return (
@@ -19,13 +18,7 @@ function CharacterSelectionPage(props) {
       style={styles.background}
       blurRadius={10} // Add blurRadius property to make the image more blurry
     >
-      <SafeAreaView>
-        <ReturnBtn
-          text="<"
-          onPress={() => console.log("Return to Previous Page")}
-        />
-      </SafeAreaView>
-
+      <Header title="Character Selection" />
       <View style={styles.buttonContainer}>
         <StartBtn
           text="Create a Room"
