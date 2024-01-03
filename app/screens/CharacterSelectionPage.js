@@ -19,6 +19,7 @@ function CharacterSelectionPage(props) {
       blurRadius={10} // Add blurRadius property to make the image more blurry
     >
       <Header title="Character Selection" />
+
       <View style={styles.buttonContainer}>
         <StartBtn
           text="Create a Room"
@@ -33,10 +34,6 @@ function CharacterSelectionPage(props) {
 export default CharacterSelectionPage;
 
 const styles = StyleSheet.create({
-  //   imgContainer: {
-  //     flex: 1,
-  //     justifyContent: "center",
-  //   },
   background: {
     flex: 1,
     // alignItems: "center",
