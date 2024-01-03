@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import StartBtn from "./StartBtn";
 import Header from "./Header";
+import CharacterCard from "./CharacterCard";
 
 function CharacterSelectionPage(props) {
   return (
@@ -19,6 +20,7 @@ function CharacterSelectionPage(props) {
       blurRadius={10} // Add blurRadius property to make the image more blurry
     >
       <Header title="Character Selection" />
+      <CharacterCard />
 
       <View style={styles.buttonContainer}>
         <StartBtn
