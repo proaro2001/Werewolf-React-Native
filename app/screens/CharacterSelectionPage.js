@@ -25,6 +25,7 @@ function CharacterSelectionPage(props) {
         <CharacterCard name={"witch"} />
         <CharacterCard name={"hunter"} />
         <CharacterCard name={"knight"} />
+        <CharacterCard name={"guard"} />
         <CharacterCard name={"idiot"} />
         <CharacterCard name={"villager"} />
         <CharacterCard name={"white wolf king"} />

@@ -24,11 +24,6 @@ export default {
     image: require("../assets/cards/hunter.jpg"),
     description: "You can kill one player when you die.",
   },
-  // cupid:{
-  //     name: "cupid",
-  //     image: require("../assets/cards/cupid.jpg"),
-  //     description: "You can make two players fall in love."
-  // },
   idiot: {
     name: "idiot",
     image: require("../assets/cards/idiot.jpg"),
@@ -45,5 +40,10 @@ export default {
     image: require("../assets/cards/whiteWolfKing.jpg"),
     description:
       "You can kill one player every night and kill a player by sacrisifying yourself.",
+  },
+  guard: {
+    name: "guard",
+    image: require("../assets/cards/guard.png"),
+    description: "You can protect one player every night.",
   },
 };
