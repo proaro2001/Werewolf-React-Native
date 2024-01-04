@@ -65,13 +65,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  buttonContainer: {
-    flex: 1,
-    padding: 100,
-    justifyContent: "flex-end",
-    bottom: 10,
-    alignSelf: "stretch",
-  },
   characterCardContainer: {
     flex: 1,
     flexDirection: "row",
@@ -79,19 +72,29 @@ const styles = StyleSheet.create({
     alignItems: "center",
     margin: 10,
     flexWrap: "wrap", // allow to move to next line
+    // backgroundColor: "yellow",
   },
   characterCounter: {
     flex: 0.1,
-    // backgroundColor: "#345995",
     backgroundColor: "#F4D03F",
     borderRadius: 5,
     padding: 5,
     top: 10,
+    alignSelf: "center",
+    justifyContent: "center",
   },
   characterCounterTxt: {
     fontSize: 20,
     fontWeight: "bold",
     color: "#273746",
     // color: "#FFFFE0",
+  },
+  buttonContainer: {
+    flex: 0.1,
+    padding: 10,
+    justifyContent: "flex-end",
+    bottom: 50,
+    alignSelf: "stretch",
+    // backgroundColor: "black",
   },
 });

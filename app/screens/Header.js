@@ -22,6 +22,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   headerContainer: {
+    flex: 0.1,
     flexDirection: "row", // Align children in a row
     alignItems: "center", // Center children vertically
     justifyContent: "space-between", // Distribute children evenly
