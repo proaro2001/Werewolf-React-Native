@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     margin: 10,
     flexWrap: "wrap", // allow to move to next line
-    // backgroundColor: "yellow",
+    // backgroundColor: "green", // uncomment this one to see the effect
   },
   characterCounter: {
     // flex: 0.1,
