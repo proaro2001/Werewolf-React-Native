@@ -1,10 +1,28 @@
 import React from "react";
-import { ImageBackground, StyleSheet, View, Text } from "react-native";
+import {
+  ImageBackground,
+  StyleSheet,
+  View,
+  Text,
+  FlatList,
+} from "react-native";
 import StartBtn from "./StartBtn";
 import Header from "./Header";
 import CharacterCard from "./CharacterCard";
 
 function CharacterSelectionPage(props) {
+  const characterlist = [
+    "seer",
+    "witch",
+    "hunter",
+    "knight",
+    "guard",
+    "idiot",
+    "villager",
+    "white wolf king",
+    "werewolf",
+  ];
+
   return (
     <ImageBackground
       source={require("../../assets/background.jpg")}
@@ -21,15 +39,11 @@ function CharacterSelectionPage(props) {
 
       {/* Character Cards */}
       <View style={styles.characterCardContainer}>
-        <CharacterCard name={"seer"} />
-        <CharacterCard name={"witch"} />
-        <CharacterCard name={"hunter"} />
-        <CharacterCard name={"knight"} />
-        <CharacterCard name={"guard"} />
-        <CharacterCard name={"idiot"} />
-        <CharacterCard name={"villager"} />
-        <CharacterCard name={"white wolf king"} />
-        <CharacterCard name={"werewolf"} />
+        <FlatList
+          data={characterlist}
+          renderItem={({ item }) => <CharacterCard name={item} />}
+          contentContainerStyle={{ flexDirection: "row", flexWrap: "wrap" }}
+        />
       </View>
 
       {/* Start Button */}
