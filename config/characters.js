@@ -4,11 +4,6 @@ export default {
     image: require("../assets/cards/seer.jpg"),
     description: "You can see the true identity of one player every night.",
   },
-  werewolf: {
-    name: "werewolf",
-    image: require("../assets/cards/werewolf.jpg"),
-    description: "You are a werewolf. You can kill one player every night.",
-  },
   villager: {
     name: "villager",
     image: require("../assets/cards/villager.jpg"),
@@ -35,15 +30,20 @@ export default {
     description:
       "You can reveal a player's identity by revealing your identity.",
   },
+  guard: {
+    name: "guard",
+    image: require("../assets/cards/guard.png"),
+    description: "You can protect one player every night.",
+  },
+  werewolf: {
+    name: "werewolf",
+    image: require("../assets/cards/werewolf.jpg"),
+    description: "You are a werewolf. You can kill one player every night.",
+  },
   whiteWolfKing: {
     name: "white wolf king",
     image: require("../assets/cards/whiteWolfKing.jpg"),
     description:
       "You can kill one player every night and kill a player by sacrisifying yourself.",
-  },
-  guard: {
-    name: "guard",
-    image: require("../assets/cards/guard.png"),
-    description: "You can protect one player every night.",
   },
 };

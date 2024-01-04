@@ -75,7 +75,8 @@ const styles = StyleSheet.create({
     // backgroundColor: "yellow",
   },
   characterCounter: {
-    flex: 0.1,
+    // flex: 0.1,
+    height: 40,
     backgroundColor: "#F4D03F",
     borderRadius: 5,
     padding: 5,
