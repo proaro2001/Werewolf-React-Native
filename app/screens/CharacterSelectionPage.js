@@ -10,7 +10,7 @@ import StartBtn from "./StartBtn";
 import Header from "./Header";
 import CharacterCard from "./CharacterCard";
 
-function CharacterSelectionPage({props, navigation}) {
+function CharacterSelectionPage({ props, navigation }) {
   const characterlist = [
     "seer",
     "witch",
@@ -30,7 +30,7 @@ function CharacterSelectionPage({props, navigation}) {
       blurRadius={10} // Add blurRadius property to make the image more blurry
     >
       {/* Header */}
-      <Header title="Character Selection" leftOnPress={navigation.goBack}/>
+      <Header title="Character Selection" leftOnPress={navigation.goBack} />
 
       {/* Character Count */}
       <View style={styles.characterCounter}>
@@ -42,8 +42,8 @@ function CharacterSelectionPage({props, navigation}) {
         <FlatList
           data={characterlist}
           renderItem={({ item }) => <CharacterCard name={item} />}
-          contentContainerStyle={{ 
-            flexDirection: "row", 
+          contentContainerStyle={{
+            flexDirection: "row",
             flexWrap: "wrap",
 
             justifyContent: "space-around",
