@@ -8,8 +8,8 @@ import CharacterSelectionPage from "./app/screens/CharacterSelectionPage";
 const Stack = createNativeStackNavigator(); // Create a stack navigator
 export default function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator >
+    <NavigationContainer >
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Welcome" component={Welcome} />
         <Stack.Screen name="CharacterSelectionPage" component={CharacterSelectionPage} />
       </Stack.Navigator>

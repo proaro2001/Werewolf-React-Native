@@ -45,6 +45,7 @@ function CharacterSelectionPage({props, navigation}) {
           contentContainerStyle={{ 
             flexDirection: "row", 
             flexWrap: "wrap",
+
             justifyContent: "space-around",
             // justifyContent: "space-evenly",
             // justifyContent: "space-between",
