@@ -2,10 +2,13 @@ import React from "react";
 import MyBtn from "./MyBtn";
 import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 
-function Header({ title, rightText, rightOnPress, rightStyle }) {
+function Header({ title, leftOnPress, rightText, rightOnPress, rightStyle }) {
   return (
     <SafeAreaView style={styles.headerContainer}>
-      <MyBtn text="<" onPress={() => console.log("Return to Previous Page")} />
+      <MyBtn text="<" onPress={() => {
+        console.log("Return to Previous Page");
+        leftOnPress();
+        }} />
       <Text style={styles.title}>{title}</Text>
       {/* <View style={styles.buttonEmpty} /> */}
       <MyBtn

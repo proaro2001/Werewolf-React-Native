@@ -2,7 +2,7 @@ import React from "react";
 import { ImageBackground, StyleSheet, View, Button, Text } from "react-native";
 import StartBtn from "./StartBtn";
 
-function Welcome() {
+function Welcome( {navigation}) {
   return (
     <View style={styles.imgContainer}>
       <ImageBackground
@@ -16,7 +16,10 @@ function Welcome() {
         <View style={styles.buttonContainer}>
           <StartBtn
             text="Start Game"
-            onPress={() => console.log("Start Game")}
+            onPress={() => {
+              console.log("Start Game");
+              navigation.navigate("CharacterSelectionPage");
+            }}
           />
         </View>
       </ImageBackground>
