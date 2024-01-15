@@ -5,10 +5,13 @@ import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 function Header({ title, leftOnPress, rightText, rightOnPress, rightStyle }) {
   return (
     <SafeAreaView style={styles.headerContainer}>
-      <MyBtn text="<" onPress={() => {
-        console.log("Return to Previous Page");
-        leftOnPress();
-        }} />
+      <MyBtn
+        text="<"
+        onPress={() => {
+          console.log("Return to Previous Page");
+          leftOnPress();
+        }}
+      />
       <Text style={styles.title}>{title}</Text>
       {/* <View style={styles.buttonEmpty} /> */}
       <MyBtn

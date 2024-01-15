@@ -49,6 +49,8 @@ function CharacterSelectionPage({ props, navigation }) {
             justifyContent: "space-around",
             // justifyContent: "space-evenly",
             // justifyContent: "space-between",
+            // backgroundColor: "green",
+            flex: 0.9,
           }}
         />
       </View>
